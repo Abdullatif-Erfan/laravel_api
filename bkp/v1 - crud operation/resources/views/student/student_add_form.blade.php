@@ -7,7 +7,7 @@
         <h2 align="center"> add student </h2> 
         <div align="center">
            <form action="{{url('student_add')}}" method="POST" enctype="multipart/form-data">
-               <!-- @csrf -->
+               @csrf
 
               <div style="padding: 20px;">
                  <label for="">Name</label> 
