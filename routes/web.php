@@ -14,13 +14,13 @@ use App\Http\Controllers\StudentController;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-Route::get('/',[StudentController::class, "welcome"]);
-Route::get('/student_add_form', [StudentController::class, "student_add_form"]);
+// Route::get('/',[StudentController::class, "welcome"]);
+// Route::get('/student_add_form', [StudentController::class, "student_add_form"]);
 Route::get('/student_list', [StudentController::class, "student_list"]);
 Route::post('/student_add',[StudentController::class,"student_add"]);
 Route::get('/student_delete/{id}', [StudentController::class, "student_delete"]);
-Route::get('/student_search',[StudentController::class,"student_search"]);
-Route::get('/student_update_form/{id}', [StudentController::class,"student_update_form"]);
+Route::get('/student_by_id/{id}', [StudentController::class,"student_by_id"]);
+
 Route::post('/student_update/{id}', [StudentController::class,"student_update"]);
 
 

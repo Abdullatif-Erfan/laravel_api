@@ -9,7 +9,10 @@
     <body>
 
           <form action="{{url('student_update',$data->id)}}" method="POST" enctype="multipart/form-data" align="center">
-           @csrf    
+           <!-- 
+               I have ignored CSRF right now, but in real project we can use token-based authentication like JWT
+             -->
+          <!-- @csrf     -->
           <div>
                   <label for="name">name</label>
                   <input type="text" id="name" name="name" value="{{$data->name}}">

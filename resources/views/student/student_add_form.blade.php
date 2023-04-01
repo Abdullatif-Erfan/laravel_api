@@ -7,7 +7,11 @@
         <h2 align="center"> add student </h2> 
         <div align="center">
            <form action="{{url('student_add')}}" method="POST" enctype="multipart/form-data">
-               <!-- @csrf -->
+              
+              <!-- @csrf -->
+              <!-- 
+               I have ignored CSRF right now, but in real project we can use token-based authentication like JWT
+             -->
 
               <div style="padding: 20px;">
                  <label for="">Name</label> 
